@@ -15,7 +15,7 @@ public class MyController {
     @Autowired
     private EmployeeDAO employeeDAO;
 
-    @RequestMapping("/")
+    @RequestMapping("/emp")
     public String showAllEmployees(Model model){
 
         List<Employee> allEmployees = employeeDAO.getAllEmployees();
@@ -23,6 +23,11 @@ public class MyController {
 
         return "all-employees";
     }
+    @RequestMapping("/puk")
+    public String puk(Model model){
 
+
+        return "all-employees";
+    }
 
 }
