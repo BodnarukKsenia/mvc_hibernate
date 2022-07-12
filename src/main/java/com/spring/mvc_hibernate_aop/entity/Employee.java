@@ -7,7 +7,7 @@ import javax.persistence.*;
 @Table(name = "employees")
 public class Employee {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY) //генерация айди по стратегии
     @Column(name = "id")
     private int id;
     @Column(name = "name")
